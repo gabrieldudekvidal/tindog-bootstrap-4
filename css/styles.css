@@ -80,7 +80,7 @@ p{
 
 .icon{
   color: #ef8172;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 
 .icon:hover{
@@ -114,4 +114,15 @@ p{
 .press-logo{
   width: 15%;
   margin: 20px;
+}
+
+/*Pricing Section*/
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column{
+  padding: 3%;
 }
