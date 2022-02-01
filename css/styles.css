@@ -1,35 +1,35 @@
 
 body{
  font-style: "Montserrat";
+ text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #ffffff;
-}
+/* Headings */
 
-.container-fluid{
-padding: 3% 20% 7%;
-}
-
-h1 {
+.big-heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5rem;
   line-height: 1.5;
 }
 
-h2{
-  font-family: 'Montserrat';
+.section-heading{
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h3{
-  font-family: "Montserrat";
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+  
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
 }
 
 p{
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 
 /* Navigation Bar*/
@@ -59,6 +59,18 @@ p{
   margin: 5% 3% 5% 0;
 }
 
+/* Title-Section*/
+
+#title {
+  background-color: #ff4c68;
+  color: #ffffff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Title Image */
 
 .title-image{
@@ -68,30 +80,19 @@ p{
   right: 30%;
 }
 
-@media (max-width: 1028px){
-
-  #title{
-    text-align: center;
-  }
-
-  .title-image{
-    position: static;
-    transform: rotate(0);
-  }
-}
-
 /* Features Section */
-/* "#" is used because it's an ID */
 
 #features {
-  padding: 7% 15%;
   background-color: #ffffff;
   position: relative;
   z-index: 1;
 }
 
+.feature-title{
+  font-size: 1.5rem;
+}
+
 .feature-box{
-  text-align: center;
   padding: 4.5%;
 }
 
@@ -107,9 +108,13 @@ p{
 /* Testimonials Section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #ffffff;
+}
+
+.testimoneials-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image{
@@ -118,13 +123,8 @@ p{
  margin: 20px;
 }
 
-.carousel-item{
-  padding: 7% 15%;
-}
-
 #press{
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -137,9 +137,38 @@ p{
 
 #pricing{
   padding: 100px;
-  text-align: center;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column{
   padding: 3%;
+}
+
+/*CTA Section */
+
+#cta{
+ background-color: #ff4c68;
+ color: #ffffff;
+}
+
+/*Footer Section*/
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px){
+
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
 }
